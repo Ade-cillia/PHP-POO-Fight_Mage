@@ -11,18 +11,18 @@ abstract class Character
 
     public function dicelaunched(){
         $randomDiceAttack = rand(1,100);
-        echo "<p>lancement de dés : ".$randomDiceAttack."</p>";
+        $message = "<p>lancement de dés : ".$randomDiceAttack."</p>";
         if ( 1 <= $randomDiceAttack && $randomDiceAttack <= 5) {
-            echo "<p>Réussite critique !</p>";
+            $message = $message."<p>Réussite critique !</p>";
             $diceStatus=1;
         }elseif (5 < $randomDiceAttack && $randomDiceAttack < 95) {
-            echo "<p>Paf, Réussite</p>";
+            $message = $message."<p>Paf, Réussite</p>";
             $diceStatus=2;
         }else {
-            echo "<p>Echec critique !!</p>";
+            $message = $message."<p>Echec critique !!</p>";
             $diceStatus=3;
         }
-        return $diceStatus;
+        return $message;
     }
 
 

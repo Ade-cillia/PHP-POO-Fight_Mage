@@ -8,8 +8,8 @@ let i=0;
 for (const element of round) {
     i++;
     setTimeout((element) => {
-        element.style.display = "block";
-        scrollTo(0, elt_general.offsetHeight);
+        element.style.display = "flex";
+        //scrollTo(0, elt_general.offsetHeight);
     }, i*800, element);
 
 
