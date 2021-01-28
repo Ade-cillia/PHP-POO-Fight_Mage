@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: aquamarine;
+    height: 10%;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px 50px 20px 50px;
+    border: 2px solid black;
+}
+.menu li a:hover{
+    background-color: cadetblue;
+    cursor: pointer;
+}
